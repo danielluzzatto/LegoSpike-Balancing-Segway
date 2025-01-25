@@ -2,8 +2,8 @@
 Balacing LegoSpike Robot using PID controller and LQR based on the pendulum on a cart model.
 This project explores the control theory problem of stabilizing an inverted pendulum using the LEGO Spike Prime platform. Two control strategies were implemented and compared: PID Controller and LQR. The goal was to stabilize the pendulum and evaluate the performance of each method in theory and practice.
 
-Key Features
-Platform: LEGO Spike Prime, including gyroscope, accelerometer, motor encoders, and motors.
+**Key Features
+**Platform: LEGO Spike Prime, including gyroscope, accelerometer, motor encoders, and motors.
 
 Control Methods:
 - PID Controller: A simpler method, but faced challenges in this application.
