@@ -30,3 +30,6 @@ Steps:
 
 Results Summary
 The LQR controller proved to be significantly more effective than the PID controller in stabilizing the inverted pendulum. The system's response was smoother and more robust against disturbances, demonstrating the advantages of modern control theory in complex systems.
+
+License
+This project is licensed under the MIT License.
