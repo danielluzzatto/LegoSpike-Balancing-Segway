@@ -6,30 +6,30 @@ This project explores the control theory problem of stabilizing an inverted pend
 Platform: LEGO Spike Prime, including gyroscope, accelerometer, motor encoders, and motors.
 
 # Control Methods:
-- PID Controller: A simpler method, but faced challenges in this application.
+- PID Controller: A simpler method, but faced challenges in this application. In particular, since the system is highly unstable, the tuning was particularly challenging 
 - LQR Controller: Successfully stabilized the system, offering superior performance and robustness.
 
 # State Estimation:
-- A complementary filter was designed to fuse gyroscope and accelerometer data for accurate angle estimation.
+- A complementary filter was designed to fuse gyroscope and accelerometer data for accurate angle estimation. The sensor were tested with both static and dynamic tests.
 - Motor encoders were used to calculate the position and linear velocity of the robot.
 
 # Files Included
 - Code Files: Python scripts for both PID and LQR implementations.
 - Simulation Data: MATLAB/Simulink files for theoretical analysis and testing.
 - Sensor Data: CSV files collected from tests on the robot.
-- Report (Optional): A detailed report explaining the methods, theory, results, and conclusions.
+- Report: Explanation of the methods, theory, simulations, results, and conclusions.
 
 # How to Run the Code
-- Hardware Requirements:
+Hardware Requirements:
 - LEGO Spike Prime set, including motors, sensors, and hub.
-- A compatible computer with the LEGO Spike app installed.
+- A compatible computer with the LEGO Spike app installed. The project can be run on other platforms such as Pybricks but the built-in lego functions might not be the same.
 # Steps:
 - Upload the Python files to the LEGO Spike hub.
 - Ensure the hardware is assembled according to the instructions in the report.
 - Run the desired script (PID or LQR) and observe the robot's behavior.
 
 # Results Summary
-The LQR controller proved to be significantly more effective than the PID controller in stabilizing the inverted pendulum. The system's response was smoother and more robust against disturbances, demonstrating the advantages of modern control theory in complex systems.
+The LQR controller proved to be significantly more effective than the PID controller in stabilizing the inverted pendulum. When testing the robot using LQR, the setup stabilized for up to 3 minutes. The system's response was smoother and more robust against disturbances, demonstrating the advantages of modern control theory in complex systems.
 
 # License
 This project is licensed under the MIT License.
